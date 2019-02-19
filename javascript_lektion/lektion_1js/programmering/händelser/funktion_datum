@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>  
+	<meta charset="utf-8">
+	<title>Vad kan JavaScript göra 5 </title>
+<body>
+
+<h2>Vad kan JavaScript göra 5</h2>
+
+
+
+function setDate(){
+  document.getElementById('date').innerHTML=Date();
+}
+
+<body onload="setDate()">
+  <p> The current date is <span id = "date"></span></p>
+
+ </body>
+</html>

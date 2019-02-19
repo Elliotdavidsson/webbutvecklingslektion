@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="utf-8">
+  <title>Funktionen eval - kortare version</title>
+</head>
+<body>
+	<h3>Funktionen eval()</h3>
+	<p>Funktionen eval() omvandlar en sträng till ett tal, under förutsättning att strängen går att omvandla. Försöker man t ex att omvandla strängen Kalle till ett tal fås värdet NaN – not a number. Följande program läser in och beräknar summan av två tal</p>
+	<script>
+	a=eval(prompt("Ange ett tal!","Mata in här"));
+	b=eval(prompt("Ange ett tal till!","Mata in här"));
+	document.write("Summan av talen är "+(a+b));	//Observera parenteser vid additionen
+	</script>
+</body>
+</html>

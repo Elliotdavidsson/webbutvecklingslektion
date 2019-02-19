@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="utf-8">
+  <title>Ändra DOM</title>
+ <style>
+
+ button{
+  width:150px;
+  background-color: #00CCEE;
+  margin-left:15px;
+  font-size:120%;
+}
+
+p{
+  border:2px solid black;
+	text-align: center;
+	margin: 20px;
+	width:250px;
+}
+
+#saker{
+	text-align: center;
+    color:white;
+	background-color: #7F7F7F;
+}
+ </style>
+
+</head>
+	<body>
+	<h1>Ändra DOM</h1>
+		<button onclick="document.getElementById('saker').innerHTML = 'Klicka Första Knapp';">Första</button>
+
+		<button onclick="document.getElementById('saker').innerHTML = 'Klicka Andra Knapp';">Tredje</button>
+	<p>Den kod ska inte ändra.</p>
+	<p id="saker">Den ska ändra.</p>
+	<p>Den kod ska inte ändra heller.</p>
+</body>
+</html>
