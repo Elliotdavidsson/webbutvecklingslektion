@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<title>Kombinationsselektorer</title>
+<style>
+
+#a > p {
+	/* p-barn till element med id a */
+	color: red;
+}
+
+#a span {
+	/* Span-avkomlingar till element med id a */
+	color: blue;
+}
+
+#a > .bb {
+	/* Ett element med klassen bb som är
+		barn till element med id a */
+	color: green;
+}
+
+
+#a > .bb + p {
+	/* Ett p-element som är närmast
+		efterföljande syskon till ett
+		element som har klassen bb
+		och i sin tur är barn till id=a */
+	color: black;
+}
+</style>
+
+</head>
+<body>
+	<h1>Kombinationsselektorn</h1>
+	<div id="a"> 
+		<p>Röd text.</p>
+		<p class="bb">Grön text.</p>
+		<p>Svart text.
+			<span>Blå text.</span></p>
+		<p>Koden från Thelin läromedel: <span>Webbutveckling 1 av Lars Gunther</span></p>
+	</div>
+</body>
+</html>
