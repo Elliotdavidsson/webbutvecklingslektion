@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="sv">
+<head>
+	<meta charset="utf-8">
+<title>Ny sida 1</title>
+<script language="JavaScript">
+function inmata(ordet)
+{
+   alert("Du heter "+ordet);
+}
+
+</script>
+</head>
+<body>
+<body onLoad="f1.T1.focus();">	//Textrutan fokuseras när sidan laddas med metoden focus()
+<form name="f1">		//Deklarera formulärnamnet
+    <input type="text" name="T1" size="20"></p>
+    <input type="button" value="Mata in" name="B5" OnClick="inmata(f1.T1.value);">  
+
+</form>
+</body>
+</html>

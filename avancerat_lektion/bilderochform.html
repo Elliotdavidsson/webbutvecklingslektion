@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+<title>Ny sida 1</title>
+
+<script language="javascript">
+function farg()
+{
+      if (ff.D1.selectedIndex!=0)
+      {
+         bilden.src=ff.D1.options[ff.D1.selectedIndex].value;
+      }
+}
+</script>
+</head>
+<body>
+<form name="ff">
+  <p><select size="1" name="D1" onChange="farg();">
+  <option>Välj en bild</option>
+  <option value="flan.jpg">Leche Flan</option>
+  <option value="flowers.jpg">Flowers</option>
+  <option value="ladyhen.jpg">Lady Hen</option>
+  </select></p>
+ </form>
+<p><img name="bilden" src="flan.jpg" width="500" height="500"></p>
+</form>
+</body>
+</html>
+
